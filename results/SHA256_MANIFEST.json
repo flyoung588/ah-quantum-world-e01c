@@ -1,0 +1,80 @@
+{
+  "algorithm": "SHA256",
+  "files": [
+    {
+      "path": "all_evaluations.jsonl",
+      "sha256": "474f9f68e67ef480c1e4b67c0467810b9e2beea28710dff1b395e33c1b14b776",
+      "bytes": 38004
+    },
+    {
+      "path": "arithmetic_and_provenance_QA.json",
+      "sha256": "43e86e991e8785534680d2a5af4a9e92d2d2756c864ca74c4dadd2eb26106600",
+      "bytes": 1853
+    },
+    {
+      "path": "basis_summaries.json",
+      "sha256": "e54183d7436e5156cd42f19debfcc8c501291300e2049737f6157218bd108c41",
+      "bytes": 2022
+    },
+    {
+      "path": "environment.json",
+      "sha256": "2a85f31f452035b17a0194797d5262503b51068d81e3be9b0d561d1557fbba1e",
+      "bytes": 3003
+    },
+    {
+      "path": "execution_error.json",
+      "sha256": "c46fc9cb909487e7ee09c1e5c6e06101545330e2b50b8abfe8873abcd085aaa1",
+      "bytes": 3945
+    },
+    {
+      "path": "fixed_R_basis_convergence.json",
+      "sha256": "c46de256c7b7cb07c146ca4ab317f7e6487865e60a05b00f11aa9e1cb07210df",
+      "bytes": 5135
+    },
+    {
+      "path": "ground_root_anomaly.json",
+      "sha256": "034462ebf5f89f303a49680832563c10c38ffa3cd5ec51f5347a01cb34742808",
+      "bytes": 769
+    },
+    {
+      "path": "numerical_checks.json",
+      "sha256": "06764ef5e49138169a39e28e78434961bb7133de9ceee8c3047da82a120bd636",
+      "bytes": 346
+    },
+    {
+      "path": "partial_curve_from_actual_evaluations.json",
+      "sha256": "037fb134f01b6897e1e17bc977dd21703f411487fc5b63ffb2d4d2cfd91dd00e",
+      "bytes": 31480
+    },
+    {
+      "path": "physical_comparison_report.json",
+      "sha256": "cb7e08e14819e3593091f634eaf2caa85c8f0ebb15abb3bdde8d23eac8f223cd",
+      "bytes": 3196
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "9b89e354ca625aebfa1ad72f55f812ee48aad25f7f0105366501fcdc840ac133",
+      "bytes": 1179
+    },
+    {
+      "path": "recovered_curve.csv",
+      "sha256": "db6d1e8d72f8be4c902cb18b7b38961e2605c594fa5b30ab97e97e7d52b27cb1",
+      "bytes": 11298
+    },
+    {
+      "path": "recovered_curve_from_actual_evaluations.json",
+      "sha256": "dc570e7c80deaa2b9b84534c9594486fa88be9bf9f8d327f08610370b0135c76",
+      "bytes": 31503
+    },
+    {
+      "path": "requirements.freeze.txt",
+      "sha256": "e5bdd5b6ef2f746340e79d4b670b048b47d8e424b6485adc17b4936e10f23eb9",
+      "bytes": 308
+    },
+    {
+      "path": "resources.json",
+      "sha256": "b45fe9f15a9735fa1b2c5f5b789b3a6b32073960fb70cd42ff897dbc1cacaf96",
+      "bytes": 1551
+    }
+  ]
+}

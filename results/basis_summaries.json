@@ -1,0 +1,60 @@
+[
+  {
+    "De_basis_consistent_Eh": 0.1651161743568661,
+    "De_basis_consistent_eV": 4.493039959291411,
+    "Emin_Eh": -1.1636729811960322,
+    "H_atom_basis_error_Eh": 0.0007215965804169278,
+    "H_atom_same_basis_Eh": -0.49927840341958307,
+    "Re_Angstrom": 0.7608934428487204,
+    "Re_bohr": 1.4378802179292347,
+    "Re_minus_rounded_reference_bohr": 0.03678021792923469,
+    "Re_step_sensitivity_bohr": 1.6757943268608244e-06,
+    "anchor_error_Eh": 0.011061179324329373,
+    "basis": "cc-pVDZ",
+    "depth_exact_endpoint_diagnostic_Eh": 0.16367298119603224,
+    "depth_vs_reference_point_Eh": -0.009359757043350597,
+    "local_parabolic_checks": [
+      {
+        "curvature_Eh_per_bohr2": 0.36626948352047606,
+        "step_bohr": 0.002,
+        "vertex_bohr": 1.4378823731447257
+      },
+      {
+        "curvature_Eh_per_bohr2": 0.36626849952980933,
+        "step_bohr": 0.001,
+        "vertex_bohr": 1.4378806973503988
+      }
+    ],
+    "optimization_nfev": 9,
+    "optimization_success": true
+  },
+  {
+    "De_basis_consistent_Eh": 0.17271706415959742,
+    "De_basis_consistent_eV": 4.69987070584221,
+    "Emin_Eh": -1.172336686763283,
+    "H_atom_basis_error_Eh": 0.00019018869815723427,
+    "H_atom_same_basis_Eh": -0.49980981130184277,
+    "Re_Angstrom": 0.7426227874839837,
+    "Re_bohr": 1.403353683150329,
+    "Re_minus_rounded_reference_bohr": 0.0022536831503290333,
+    "Re_step_sensitivity_bohr": 1.7251274340157607e-06,
+    "anchor_error_Eh": 0.002140188735903603,
+    "basis": "cc-pVTZ",
+    "depth_exact_endpoint_diagnostic_Eh": 0.17233668676328295,
+    "depth_vs_reference_point_Eh": -0.0017588672406192718,
+    "local_parabolic_checks": [
+      {
+        "curvature_Eh_per_bohr2": 0.3707681536235796,
+        "step_bohr": 0.002,
+        "vertex_bohr": 1.4033560736472468
+      },
+      {
+        "curvature_Eh_per_bohr2": 0.37076708991889973,
+        "step_bohr": 0.001,
+        "vertex_bohr": 1.4033543485198128
+      }
+    ],
+    "optimization_nfev": 9,
+    "optimization_success": true
+  }
+]

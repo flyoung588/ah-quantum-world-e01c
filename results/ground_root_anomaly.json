@@ -1,0 +1,15 @@
+{
+  "basis": "cc-pVDZ",
+  "R_bohr": 20,
+  "reported_energy_Eh": -0.5198598478956922,
+  "reference_BO_Eh": -1.0000001067401283,
+  "difference_Eh": 0.4801402588444361,
+  "same_basis_separate_atom_endpoint_Eh": -0.9985568068391661,
+  "energy_at_10_bohr_Eh": -0.9985581731682599,
+  "solver_converged_flag": true,
+  "S2": 0.0,
+  "residual_norm_Eh": 5.172923282014411e-15,
+  "conclusion": "Severe dissociation/ground-root plausibility failure despite tiny residual. Do not label the point verified ground state or attribute the full gap to basis error.",
+  "cause": "Initial-vector / invariant-subspace / root-selection issue suspected, not independently confirmed by a new quantum calculation",
+  "repair_or_recalculation": "NOT_RUN; preserve original value and protocol"
+}

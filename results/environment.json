@@ -1,0 +1,74 @@
+{
+  "ase": "3.29.0",
+  "ase_Bohr_Angstrom": 0.5291772105638411,
+  "ase_Hartree_eV": 27.211386024367243,
+  "cpu_affinity": [
+    0
+  ],
+  "h5py": "3.15.1",
+  "kernel": "6.17.0-1022-azure",
+  "lib_num_threads": 1,
+  "machine": "x86_64",
+  "numpy": "2.3.5",
+  "os_release": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "pyscf": "2.14.0",
+  "python": "3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]",
+  "runner": {
+    "GITHUB_RUN_ATTEMPT": "1",
+    "GITHUB_RUN_ID": "38733218903",
+    "GITHUB_SHA": "34809b009995ab59d8e9ee4b132cd0b7bf3c640d",
+    "ImageOS": "ubuntu24",
+    "ImageVersion": "20261012.334.1",
+    "RUNNER_ARCH": "X64",
+    "RUNNER_OS": "Linux"
+  },
+  "scipy": "1.16.3",
+  "source_hashes": {
+    ".github/workflows/h2-once.yml": "8b2c699fda51d5b5f641f80fc921c252c8e0fb939704eef7f4930cd458ec9276",
+    "protocol.json": "8abcf57804db779b759377b71a7f62b7dba0ee95184cfe125c59515a5f2c8ad6",
+    "reference.json": "d0f3739eccc177d56376a32f7436febf0333e0535d722273567b2da9e021b31d",
+    "requirements.txt": "60779c9c4e15a1e31bc75b337a292e7f36592ff4ffe09329dfee5fc9f01f9088",
+    "run_h2.py": "00b41f2d96cdc76dbffa6bfae0b3a7714d5d59dff3afd46fbf3fe262398ebfd6"
+  },
+  "threadpools": [
+    {
+      "architecture": "Haswell",
+      "filepath": "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.30"
+    },
+    {
+      "architecture": "Haswell",
+      "filepath": "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-b75cc656.so",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.29.dev"
+    },
+    {
+      "architecture": "Barcelona",
+      "filepath": "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pyscf/lib/libopenblas-r0-f650aae0.3.3.so",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libopenblas",
+      "threading_layer": "disabled",
+      "user_api": "blas",
+      "version": null
+    },
+    {
+      "filepath": "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pyscf/lib/libgomp-a34b3233.so.1.0.0",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libgomp",
+      "user_api": "openmp",
+      "version": null
+    }
+  ]
+}

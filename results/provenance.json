@@ -1,0 +1,22 @@
+{
+  "run_url": "https://github.com/flyoung588/ah-quantum-world-e01c/actions/runs/38733218903",
+  "run_id": 38733218903,
+  "attempt": 1,
+  "scientific_source_commit": "34809b009995ab59d8e9ee4b132cd0b7bf3c640d",
+  "scientific_source_hashes": {
+    ".github/workflows/h2-once.yml": "8b2c699fda51d5b5f641f80fc921c252c8e0fb939704eef7f4930cd458ec9276",
+    "protocol.json": "8abcf57804db779b759377b71a7f62b7dba0ee95184cfe125c59515a5f2c8ad6",
+    "reference.json": "d0f3739eccc177d56376a32f7436febf0333e0535d722273567b2da9e021b31d",
+    "requirements.txt": "60779c9c4e15a1e31bc75b337a292e7f36592ff4ffe09329dfee5fc9f01f9088",
+    "run_h2.py": "00b41f2d96cdc76dbffa6bfae0b3a7714d5d59dff3afd46fbf3fe262398ebfd6"
+  },
+  "started_at": "2026-10-15T12:15:12Z",
+  "completed_at": "2026-10-15T12:26:40Z",
+  "runner_labels": [
+    "ubuntu-24.04"
+  ],
+  "runner_name": "GitHub Actions 1000000075",
+  "recovery": "GitHub log chunks SHA256-verified, no Actions artifact storage",
+  "postprocessing": "Standard-library arithmetic/provenance audit only, no Mac electronic-structure execution",
+  "config_rejection_url": "https://github.com/flyoung588/ah-quantum-world-e01c/actions/runs/38732939727"
+}

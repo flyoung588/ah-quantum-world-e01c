@@ -37,3 +37,16 @@ Only `workflow_dispatch` exists; do not automatically repeat a failed run.
 All computations run on GitHub, not Mac or Hetzner. Their prior NO-GO decisions
 are unchanged. Environment/script completion and physical error tests are
 reported separately.
+
+## Actual outcome
+
+**NO-GO: incomplete validation and failed numerical/root QA.** The single
+scientific job stopped at its predeclared 660-second scientific ceiling, inside
+the 15-minute job limit. All 48 fixed-grid points were computed; QZ minimum and
+cross-check were not completed. TZ/QZ residual thresholds failed, and the DZ
+20-bohr point fails ground-root plausibility despite a converged solver flag.
+
+See [actual results and limits](RESULTS.md), the original `results/` data,
+`results/ground_root_anomaly.json`, and `results/execution_error.json`.
+`python audit_results.py` performs only saved-data hashing/arithmetic checks,
+not another scientific calculation. No workflow rerun was initiated.

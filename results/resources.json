@@ -1,0 +1,47 @@
+{
+  "max_rss_KiB_linux": 834696,
+  "points_completed": 81,
+  "process_system_seconds": 5.898035,
+  "process_user_seconds": 654.77691,
+  "threadpools_final": [
+    {
+      "architecture": "Haswell",
+      "filepath": "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.30"
+    },
+    {
+      "architecture": "Haswell",
+      "filepath": "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-b75cc656.so",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.29.dev"
+    },
+    {
+      "architecture": "Barcelona",
+      "filepath": "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pyscf/lib/libopenblas-r0-f650aae0.3.3.so",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libopenblas",
+      "threading_layer": "disabled",
+      "user_api": "blas",
+      "version": null
+    },
+    {
+      "filepath": "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pyscf/lib/libgomp-a34b3233.so.1.0.0",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libgomp",
+      "user_api": "openmp",
+      "version": null
+    }
+  ],
+  "wall_seconds": 660.628853952
+}

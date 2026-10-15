@@ -1,0 +1,14 @@
+[
+  {
+    "FCI_below_RHF": true,
+    "basis": "cc-pVDZ",
+    "same_basis_representation_delta_Eh": -4.440892098500626e-16,
+    "tol_1e10_vs_1e12_delta_Eh": 0.0
+  },
+  {
+    "FCI_below_RHF": true,
+    "basis": "cc-pVTZ",
+    "same_basis_representation_delta_Eh": -9.14823772291129e-14,
+    "tol_1e10_vs_1e12_delta_Eh": 9.087397501161831e-12
+  }
+]
