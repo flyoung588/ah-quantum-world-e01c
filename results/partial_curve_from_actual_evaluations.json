@@ -1,5 +1,5 @@
 {
-  "status": "INCOMPLETE_NOT_FULL_GRID",
+  "status": "SUPERSEDED_DERIVED_LABEL_SEE_RECOVERED_CURVE",
   "source": "Actual original all_evaluations.jsonl only; energy values not regenerated",
   "points": [
     {
@@ -962,5 +962,6 @@
       "reference_Eh": -1.0000001067401283,
       "error_Eh": 0.00010891326014128566
     }
-  ]
+  ],
+  "superseded_reason": "Initial label said grid incomplete; actual data contain 48/48 fixed-grid points. Final QZ minimum/numerical validation remain incomplete. No energy value changed."
 }
