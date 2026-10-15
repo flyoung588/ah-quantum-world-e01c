@@ -1,0 +1,29 @@
+{
+  "source": "K. Pachucki, Phys. Rev. A 82, 032509 (2010), DOI 10.1103/PhysRevA.82.032509",
+  "url": "https://arxiv.org/html/1007.0322",
+  "scope": "Infinite nuclear mass, nonrelativistic singlet ground-state BO total potential including 1/R; not experimental D0",
+  "contact": "Original HTML Eq.2 and Table 4 potential values plus abstract/Table 2 point transcribed before the run; displayed parentheses denote reference uncertainty, not our numerical precision",
+  "points_Eh": {
+    "0.8": -1.0200566663605151,
+    "1.0": -1.1245397195468709,
+    "1.2": -1.1649352434403099,
+    "1.3": -1.1723471490380904,
+    "1.38": -1.1743916836322532,
+    "1.4": -1.1744757142204434,
+    "1.4011": -1.1744759314002167,
+    "1.42": -1.1744111412392317,
+    "1.5": -1.1728550795785838,
+    "1.6": -1.1685833733714593,
+    "2.0": -1.1381329571326480,
+    "3.0": -1.0573262688726617,
+    "4.0": -1.0163902529506681,
+    "6.0": -1.0008357076551804,
+    "10.0": -1.0000087557460515,
+    "20.0": -1.0000001067401283
+  },
+  "reference_distance_bohr": 1.4011,
+  "reference_distance_is_rounded_near_equilibrium_not_exact_Re": true,
+  "exact_H_plus_H_asymptote_Eh": -1.0,
+  "reference_depth_at_1_4011_Eh": 0.1744759314002167,
+  "depth_limit": "Reference depth at the published near-minimum point; not a separately sourced exact minimum or zero-point corrected dissociation energy"
+}

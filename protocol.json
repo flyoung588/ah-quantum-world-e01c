@@ -1,0 +1,18 @@
+{
+  "task": "One manual public standard Ubuntu 24.04 run, Python 3.12, one job, one thread, 15 minute job timeout",
+  "hamiltonian_au": "sum_i[-1/2 nabla_i^2 -1/r_iA -1/r_iB] +1/r_12 +1/R",
+  "state": "H2 two-electron singlet S=0, no ECP, real Coulomb AO integrals; fixed nuclei, nonrelativistic",
+  "basis_sequence": ["cc-pVDZ", "cc-pVTZ", "cc-pVQZ"],
+  "solver": "FCI in full finite orbital space; overlap-eigenvector orthogonalized AO representation, cross-check at 1.4011 bohr via RHF orbitals and direct_spin1 FCI",
+  "curve": "All 16 prebound reference distances; no post-outcome removal of points",
+  "equilibrium": "Bounded minimization 1.3 to 1.5 bohr, plus two local three-point parabola step sizes to diagnose location sensitivity",
+  "De": "Primary: 2 E_H(same basis) - min E_H2(same basis); also report -1-min E_H2 as exact-asymptote mixed-basis diagnostic. Do not label either experimental D0.",
+  "numerical_QA": {"FCI_converged": true, "residual_Eh_max": 1e-7, "abs_S2_max": 1e-7, "alternative_representation_delta_Eh_max": 1e-8, "tolerance_repeat_delta_Eh_max": 1e-8},
+  "physics_reporting": "Compare every reference point, convergence differences at matched geometries, De and Re across bases. Finite-basis FCI is not CBS; no guaranteed monotonicity or rigorous error bound inferred from cardinal labels.",
+  "accuracy_diagnostics_fixed_before_run": {"near_equilibrium_energy_within_1_mEh": 0.001, "near_equilibrium_energy_within_1_microEh": 0.000001},
+  "diagnostic_not_redefinition": "The 1 mEh and 1 microEh checks are reported separately; no high-precision PASS is inherited from program/numerical PASS.",
+  "no_original_discovery_claim": true,
+  "no_retries": "Exactly one workflow dispatch; numerical tolerance/representation checks inside this run are specified validation, not workflow reruns",
+  "storage": "No Actions upload-artifact, no cache, no Packages/LFS. Results encoded in ordinary logs, retrieved and committed as small normal public Git files. No secrets or private project material.",
+  "claim_ceiling": "Reproduction of finite-basis H2 BO physics only, not atomic hydrogen storage, X, original discovery or production capability qualification"
+}
