@@ -1,10 +1,10 @@
-name: H2 single-run finite-basis FCI
+name: E01-C2 three-point numerical certification
 on:
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: h2-one-off
+  group: h2-c2-one-off
   cancel-in-progress: false
 jobs:
   h2:
@@ -30,5 +30,7 @@ jobs:
       - name: Install binary wheels only, no persistent cache
         run: |
           python -m pip install --disable-pip-version-check --no-cache-dir --only-binary=:all: -r requirements.txt
-      - name: Run one bounded two-electron validation
-        run: python -u run_h2.py
+      - name: Run three predeclared points, strict 6 GiB address-space cap
+        run: |
+          ulimit -v 6291456
+          python -u c2/run_certification.py

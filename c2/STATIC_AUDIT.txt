@@ -1,0 +1,67 @@
+E01-C2 pre-execution audit / frozen before dispatch
+
+Historical source: 34809b009995ab59d8e9ee4b132cd0b7bf3c640d.
+Historical main: 2383c01c5f0d1a019d2f3593edc9685ff7f269d0.
+All eleven requested original files read. All 81 JSONL rows parsed and hashed
+in the local admission record; historical bytes and verdict remain unchanged.
+
+Hamiltonian: real Coulomb, two electrons, fixed nuclei; kinetic+nuclear
+attraction AO integrals, electron repulsion chemist (pq|rs), +1/R total energy.
+C=U diag(s^-1/2) is a canonical (not symmetric) AO orthogonalizer and satisfies
+C^T S C=I. No missing electronic Hamiltonian term identified by static audit.
+Original absorb_h1e(...,.5), contract_2e and (E-E_nuc)*CI are in the same
+orbital representation and electronic energy convention. No factor-two error
+identified. These conclusions require the actual runtime crosschecks below.
+
+Source audit: PySCF v2.14.0 direct_spin0.py kernel_ms0 lines 270-285 fully
+diagonalizes pspace when it covers the CI space, then _check_ symmetrizes and
+rejects vectors unless their singlet projection norm is within 1e-6 of one.
+At dissociation the singlet/triplet near-degeneracy can yield mixed numerical
+eigenvectors; the loop may discard valid low-energy singlet components and
+accept a higher pure singlet. This is a specific hypothesis, NOT yet confirmed.
+It is not correct to blame Davidson initial guesses automatically: DZ has 100
+product determinants, less than default pspace_size=400, so the dense pspace
+shortcut rather than Davidson is expected. A tests this explicitly.
+
+direct_spin1/0 pass conv_tol_residual to lib.davidson1; linalg_helper.py
+lines 378-381 default to sqrt(tol) when no residual tolerance is supplied.
+Thus tol=1e-12 normally allows residual 1e-6, not the independent 1e-7 QA gate.
+TZ/QZ residual failure is compatible with source defaults, but actual improved
+results and independent operator agreement must be measured, not assumed.
+
+Minimal repair: retain original program unchanged; new c2/run_certification.py
+uses RHF orbitals, explicit symmetric broad initial CI with nonzero HF weight,
+direct_spin1 Davidson (no dense pspace shortcut), conv_tol_residual=1e-10 and
+conv_tol=1e-14. Target is certified lowest singlet, not merely convergence.
+Independent method constructs the complete two-electron product Hamiltonian
+directly from h and chemist integrals. Its spatially symmetric/antisymmetric
+blocks are exact singlet/triplet sectors for two electrons. Dense LAPACK solves
+their lowest eigenpairs independently of the direct FCI contraction/Krylov path.
+The dense solution is NOT fed into the iterative initial guess.
+
+Derivation: opposite-spin product wavefunctions have no exchange matrix term;
+H_ij,kl=h_ik delta_jl+delta_ik h_jl+(ik|jl). Spatial symmetric basis is |ii>
+and (|ij>+|ji>)/sqrt(2); antisymmetric basis has minus instead. Projection
+commutes with the spin-independent Coulomb Hamiltonian. Its direct action is
+checked on a seeded arbitrary product vector against direct_spin1 and on the
+dense singlet eigenvector. A also diagonalizes all product eigenvalues.
+
+Resource: n=10,28,60; product dimensions 100,784,3600, singlet dimensions
+55,406,1830, triplet dimensions 45,378,1770. Largest real matrix ~104 MB,
+ERI ~104 MB. Dense reductions scale cubically in sector size, not exponential
+in this two-electron special case. Six GiB strict virtual-address hard cap,
+single thread/core, 720 s independent deadline, 15 min whole job. Imports,
+installation overhead and exports fit outside scientific deadline within job
+timeout; if not, preserve partial results and do not rerun. No local solver run.
+
+BO source: Pachucki PRA82 032509 (2010), arXiv:1007.0322, Eq.2/Table4 and
+near-minimum point; total infinite-mass nonrelativistic singlet BO energy.
+R=1.4011 is a rounded near-minimum point, not exact Re. Single points do not
+establish Re or De. Gaussian basis error, numerical residual, and omitted
+adiabatic/nonadiabatic/relativistic/QED/ZPE terms are distinct.
+
+Free admission: public repository confirmed, Actions enabled. GitHub official
+billing docs explicitly say public repositories with standard hosted runners
+are free. ubuntu-24.04 standard only. No upload-artifact, Actions cache,
+Packages, LFS or custom/larger runner. Ordinary logs transport small results.
+This asserts zero new paid product use for this path, not account-wide billing.

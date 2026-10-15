@@ -1,0 +1,19 @@
+{
+  "task": "E01-C2 targeted numerical certification; no curve, no discovery",
+  "tests": [["A", "cc-pVDZ", 20.0], ["B", "cc-pVTZ", 1.4011], ["C", "cc-pVQZ", 1.4011]],
+  "residual_gate_Eh": 1e-7,
+  "energy_path_agreement_Eh": 1e-9,
+  "operator_action_agreement_Eh": 1e-9,
+  "spin_S2_abs_max": 1e-7,
+  "orthogonality_and_hermiticity_max": 1e-9,
+  "ground_vs_triplet_tolerance_Eh": 1e-9,
+  "A_endpoint_tolerance_Eh": 1e-5,
+  "iterative": {"representation": "RHF canonical MO", "solver": "direct_spin1 with symmetric independently seeded CI", "conv_tol": 1e-14, "conv_tol_residual": 1e-10, "lindep": 1e-16, "pspace_size": 0, "davidson_only": true, "max_space": 80, "max_cycle": 200},
+  "independent_matrix": "H_ij,kl=h_ik delta_jl+delta_ik h_jl+(ik|jl); symmetric/antisymmetric spatial pair projections; LAPACK lowest eigenpairs; no FCI contraction in matrix assembly",
+  "crosschecks": "Random product-space vector checks matrix action against direct_spin1 contraction; normalized eigenvectors checked by both operators; A reproduces old orthogonalized-AO direct_spin0 solve and inspects pspace eigenvector singlet projection norms; full A product-space spectrum and singlet/triplet spectra; A same-basis isolated H endpoint. B/C only the specified single geometry, no tolerance scans.",
+  "independence_ceiling": "Different Hamiltonian assembly and eigenvalue algorithms, same PySCF AO integrals; not independent physical or integral-engine validation",
+  "resource": {"jobs": 1, "job_minutes": 15, "scientific_alarm_seconds": 720, "CPU_soft_seconds": 720, "address_space_bytes": 6442450944, "threads": 1, "cpu_affinity_count": 1, "storage": "ordinary logs and small Git files only; no artifacts/cache/LFS/Packages"},
+  "scope": "finite-basis all-electron nonrelativistic infinite-mass BO total energy; original E01-C NO-GO unchanged; no Re/De inference from these single points",
+  "physical_precision": "Report BO deviations separately. Microhartree diagnostic fixed at 1e-6 Eh, not a numerical certification criterion. H2_PHYSICAL_BASELINE may be QUALIFIED only as these three finite-basis points, never high-precision BO or full curve.",
+  "stop": "Any missing test => INCOMPLETE; gate failure => FAIL; no rerun or added tests"
+}
