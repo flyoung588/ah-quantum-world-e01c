@@ -1,0 +1,18 @@
+{
+  "c2/REPORT.md": "37ec1e66deeb5e5db68985126994574a695ef1a41b0c78b34abf7d3a10b00627",
+  "c2/RUN_RECEIPT.json": "ec3b6ec68b279d4ae22c18ba0519e824d2b148b1a381fadf2925ca55d3cbc78f",
+  "c2/STATIC_AUDIT.txt": "5db12bffb0d1db889abc6cdf757d156a2c9887e3586b68d053565da5d958fc1a",
+  "c2/UNEXECUTED_SERIALIZATION_FIX.patch": "3ba5aaa420bc7b3a832d8ae4f9162e3593dd79347fbd56991623d07facff5bee",
+  "c2/protocol.json": "e5900cda9db7a7ea073e6bcce21b52f88cb0cd2bb92c42ab66e9c0e3519bdc90",
+  "c2/results/A_eigenvectors.json": "0aacd51c8db3e43776f4f261f0d9d64f640773f7a44f70dff03ea11edb57c7bb",
+  "c2/results/A_full_product_eigenvalues.json": "3db2327f71094239d3d75d3e15e045b55f26157dfec89b8335c52a4865349ff6",
+  "c2/results/A_old_pspace_spectrum.json": "483d14a4f37d8008b83b09f2c0964029b799a93a781f97bdf6dfcc5311eb4714",
+  "c2/results/A_solver.log": "50f02845b5ac7f06a628a979621b164ed2d8a80ce3bc24f53b27cacf4a554c5a",
+  "c2/results/environment.json": "dcf8a0a182a7f96ea3110288e5ef7e6cf0bd54af75b9d5d309d13a7d72ad1981",
+  "c2/results/execution_error.json": "9b3fcbb478ff453ec9088d6bdbff041a6254129e9d331f5f785e7903d28b3937",
+  "c2/results/partial_saved_data_QA.json": "f24a8751c49fd7fc65c0985d2e79264ac7d948679f1523b0bcec90a7e11efcfd",
+  "c2/results/physical_error_report.json": "b52d705bc15b00a634f44d4a95d330a47741807aa9e93f0ec15b0b68022d39ff",
+  "c2/results/requirements.freeze.txt": "e5bdd5b6ef2f746340e79d4b670b048b47d8e424b6485adc17b4936e10f23eb9",
+  "c2/results/resources.json": "188ec9b1f384aa484d6cb38d37c05ca6056fe0b6f1e49746474ddd2789fd9932",
+  "c2/run_certification.py": "f09eafb594e1b387bb6af4c439051432fe27891cbcb4ed7ac38be6af8db07a34"
+}

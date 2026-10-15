@@ -1,0 +1,11 @@
+{
+  "TEST_A_independent_full_space_min_Eh": -0.9985568133616696,
+  "TEST_A_BO_deviation_Eh": 0.001443293378458721,
+  "interpretation": "Partial full-space spectrum/physical asymptote diagnostic only; incomplete singlet/root/residual record prevents numerical certification. Do not present all of this gap as certified finite-basis error.",
+  "TEST_B": "NOT_RUN; historical ~2.140189 mEh and 6.378e-7 residual unchanged, not C2 results",
+  "TEST_C": "NOT_RUN; historical ~0.679583 mEh and 8.908e-7 residual unchanged, not C2 results",
+  "method": "Finite-space FCI excludes correlation truncation in principle, not an automatic implementation certificate",
+  "numerical": "Residual <=1e-7 remains mandatory; missing C2 residuals UNKNOWN, not zero or passed",
+  "physical_model": "All-electron nonrelativistic infinite-nuclear-mass BO; excludes nuclear motion, adiabatic/nonadiabatic corrections, relativity, QED and ZPE",
+  "not_established": "High-precision BO, Re, De, storage, retention, useful release, unknown states and original discovery"
+}

@@ -1,0 +1,61 @@
+{
+  "run_url": "https://github.com/flyoung588/ah-quantum-world-e01c/actions/runs/38741037586",
+  "id": 38741037586,
+  "attempt": 1,
+  "source_sha": "16441c0acfc0855df245c54f8ee880d22d8c947d",
+  "event": "workflow_dispatch",
+  "status": "completed",
+  "conclusion": "failure",
+  "job_count": 1,
+  "runner_labels": [
+    "ubuntu-24.04"
+  ],
+  "started_at": "2026-10-15T13:14:39Z",
+  "completed_at": "2026-10-15T13:15:07Z",
+  "recovered_files": [
+    {
+      "path": "c2/results/A_eigenvectors.json",
+      "bytes": 6257,
+      "sha256": "0aacd51c8db3e43776f4f261f0d9d64f640773f7a44f70dff03ea11edb57c7bb"
+    },
+    {
+      "path": "c2/results/A_full_product_eigenvalues.json",
+      "bytes": 2201,
+      "sha256": "3db2327f71094239d3d75d3e15e045b55f26157dfec89b8335c52a4865349ff6"
+    },
+    {
+      "path": "c2/results/A_old_pspace_spectrum.json",
+      "bytes": 15029,
+      "sha256": "483d14a4f37d8008b83b09f2c0964029b799a93a781f97bdf6dfcc5311eb4714"
+    },
+    {
+      "path": "c2/results/A_solver.log",
+      "bytes": 89,
+      "sha256": "50f02845b5ac7f06a628a979621b164ed2d8a80ce3bc24f53b27cacf4a554c5a"
+    },
+    {
+      "path": "c2/results/environment.json",
+      "bytes": 3005,
+      "sha256": "dcf8a0a182a7f96ea3110288e5ef7e6cf0bd54af75b9d5d309d13a7d72ad1981"
+    },
+    {
+      "path": "c2/results/execution_error.json",
+      "bytes": 2157,
+      "sha256": "9b3fcbb478ff453ec9088d6bdbff041a6254129e9d331f5f785e7903d28b3937"
+    },
+    {
+      "path": "c2/results/requirements.freeze.txt",
+      "bytes": 308,
+      "sha256": "e5bdd5b6ef2f746340e79d4b670b048b47d8e424b6485adc17b4936e10f23eb9"
+    },
+    {
+      "path": "c2/results/resources.json",
+      "bytes": 1547,
+      "sha256": "188ec9b1f384aa484d6cb38d37c05ca6056fe0b6f1e49746474ddd2789fd9932"
+    }
+  ],
+  "original_logs_sha256": "d69df3ae3b3234d08c763a813c2f40132a6b115d88a0b388649032a43ec19832",
+  "reruns": 0,
+  "results": "A partial, B/C NOT_RUN; no lost data regenerated",
+  "historical_E01_C": "NO-GO unchanged"
+}

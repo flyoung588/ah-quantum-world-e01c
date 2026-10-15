@@ -1,0 +1,93 @@
+{
+  "provenance_and_resource_checks": {
+    "historical_bytes_unchanged": true,
+    "frozen_source_hashes_match": true,
+    "recovery_hashes_match": true,
+    "reference_original_transcription_verified": true,
+    "single_job": true,
+    "one_thread": true,
+    "one_core": true,
+    "strict_address_space_6GiB": true,
+    "job_under_15min": true,
+    "no_result_files_mislabelled_complete": true
+  },
+  "provenance_QA_pass": true,
+  "scientific_certification": "INCOMPLETE — not implied by provenance PASS",
+  "source_hash_checks": {
+    ".github/workflows/h2-once.yml": true,
+    "c2/STATIC_AUDIT.txt": true,
+    "c2/protocol.json": true,
+    "c2/run_certification.py": true,
+    "reference.json": true,
+    "requirements.txt": true
+  },
+  "historical_hash_checks": {
+    "README.md": true,
+    "RESULTS.md": true,
+    "run_h2.py": true,
+    "protocol.json": true,
+    "reference.json": true,
+    "results/all_evaluations.jsonl": true,
+    "results/numerical_checks.json": true,
+    "results/ground_root_anomaly.json": true,
+    "results/execution_error.json": true,
+    "results/physical_comparison_report.json": true,
+    "results/arithmetic_and_provenance_QA.json": true
+  },
+  "reference_checks": {
+    "-1.1744759314002167": true,
+    "-1.0000001067401283": true
+  },
+  "vector_arithmetic": [
+    {
+      "name": "dense_CI",
+      "norm_squared": 1.0000000000000002,
+      "S2_two_electron_formula": 0.0,
+      "meaning": "Two-electron Ms=0 formula 1-<spatial exchange>; checks saved CI vectors only, not their eigenvalue/residual"
+    },
+    {
+      "name": "iterative_CI",
+      "norm_squared": 1.0,
+      "S2_two_electron_formula": 0.0,
+      "meaning": "Two-electron Ms=0 formula 1-<spatial exchange>; checks saved CI vectors only, not their eigenvalue/residual"
+    }
+  ],
+  "root_diagnosis": {
+    "original_dense_pspace_lowest_two": [
+      {
+        "energy_total_Eh": -0.9985568133616707,
+        "index": 0,
+        "old_check_accepts": false,
+        "singlet_projection_norm": 0.0453301266450693
+      },
+      {
+        "energy_total_Eh": -0.9985568133616702,
+        "index": 1,
+        "old_check_accepts": false,
+        "singlet_projection_norm": 0.9989720614803713
+      }
+    ],
+    "first_accepted_by_original_filter": {
+      "energy_total_Eh": -0.5198598478956922,
+      "index": 2,
+      "old_check_accepts": true,
+      "singlet_projection_norm": 1.0
+    },
+    "original_historical_wrong_energy_Eh": -0.5198598478956922,
+    "first_accepted_matches_historical_wrong_energy": true,
+    "full_independent_matrix_lowest_total_Eh": -0.9985568133616696,
+    "full_vs_pspace_spectrum_max_difference_Eh": 5.773159728050814e-15,
+    "separate_atom_endpoint_from_historical_evidence_Eh": -0.9985568068391661,
+    "independent_min_minus_historical_same_basis_endpoint_Eh": -6.522503426253934e-09,
+    "independent_min_minus_BO_Eh": 0.001443293378458721,
+    "supported": "Two lowest mixed-spin pspace eigenvectors are rejected by purity filter; first accepted root matches the historical anomaly. A separate explicitly assembled full Hamiltonian has the correct near-atomic ground energy. This establishes a concrete root-selection failure mechanism for the observed case.",
+    "not_saved": "Actual old solver return E/CI metrics, repaired/direct energy, all four residuals, singlet/triplet lowest values and final gates existed only in volatile row and were not serialized. Do not reconstruct or claim them from execution order."
+  },
+  "test_status": {
+    "A": "PARTIAL_NOT_CERTIFIED",
+    "B": "NOT_RUN",
+    "C": "NOT_RUN"
+  },
+  "review_context": "Same coordinating context; independent matrix algorithm in cloud, no independent reviewer/physical experiment",
+  "Mac_operation": "Only parse/hash/scalar arithmetic; no electronic-structure solver run"
+}

@@ -1,0 +1,12 @@
+--- a/c2/run_certification.py
++++ b/c2/run_certification.py
+@@
+     if label=='A':
+         gates['asymptote']=abs(row['ground_minus_endpoint_Eh'])<=P['A_endpoint_tolerance_Eh']
+         gates['full_space_lowest']=abs(row['full_product_vs_singlet_Eh'])<=1e-9
++    gates={key:bool(value) for key,value in gates.items()}
+     row['gates']=gates;row['numerical_pass']=all(gates.values());row['wall_seconds']=time.monotonic()-t
+
+UNEXECUTED: proposed scalar normalization only. Not applied to the dispatched
+source, not numerically tested, not authorization to rerun. Future persistence
+tests should include NumPy scalar booleans before any additional scientific job.
