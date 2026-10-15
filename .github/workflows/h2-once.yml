@@ -28,6 +28,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install binary wheels only, no persistent cache
-        run: python -m pip install --disable-pip-version-check --no-cache-dir --only-binary=:all: -r requirements.txt
+        run: |
+          python -m pip install --disable-pip-version-check --no-cache-dir --only-binary=:all: -r requirements.txt
       - name: Run one bounded two-electron validation
         run: python -u run_h2.py
